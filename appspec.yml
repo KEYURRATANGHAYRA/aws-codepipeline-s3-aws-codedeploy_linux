@@ -5,6 +5,8 @@ files:
     destination: /var/www/html/
   - source: /test2.txt  
     destination: /var/www/html/
+  - source: /test3.txt  
+    destination: /var/www/html/
 hooks:
   BeforeInstall:
     - location: scripts/remove
