@@ -1,2 +1,0 @@
-#!/bin/bash
-echo "this is test" > /var/www/html/test1.txt
