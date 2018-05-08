@@ -1,2 +1,2 @@
 #!/bin/bash
-touch /var/www/html/test1.txt
+echo "this is test" > /var/www/html/test1.txt
