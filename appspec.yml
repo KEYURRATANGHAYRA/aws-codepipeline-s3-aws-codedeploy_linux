@@ -10,7 +10,7 @@ hooks:
     - location: scripts/remove
       timeout: 300
       runas: root
-    - location: scripts/create2
+    - location: scripts/create3
       timeout: 300
       runas: root
     - location: scripts/install_dependencies
