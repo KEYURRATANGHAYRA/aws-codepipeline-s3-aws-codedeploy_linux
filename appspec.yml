@@ -3,20 +3,9 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html/
-  - source: /test2.txt  
-    destination: /var/www/html/
-  - source: /test3.txt  
-    destination: /var/www/html/
-  - source: /test4.txt  
-    destination: /var/www/html/
-  - source: /test5.txt  
-    destination: /var/www/html/
 hooks:
   BeforeInstall:
     - location: scripts/remove
-      timeout: 300
-      runas: root
-    - location: scripts/create3
       timeout: 300
       runas: root
     - location: scripts/install_dependencies
