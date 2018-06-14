@@ -1,1 +1,1 @@
-echo $HOSTNAME
+echo "${HOSTNAME}"
