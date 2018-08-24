@@ -1,2 +1,6 @@
 #!/bin/bash
+shopt -s extglob
 rm -rf /var/www/html/index.html
+cd /var/www/html/
+rm -rf !(*.git*)
+
