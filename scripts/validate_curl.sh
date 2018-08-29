@@ -10,6 +10,3 @@ else
     echo "OneSearch deployment failed"
 fi
 wget http://`hostname`:80
-echo $?
-service httpd status
-echo $?
