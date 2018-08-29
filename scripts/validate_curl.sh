@@ -6,12 +6,10 @@ result=$(/usr/bin/curl -o -I -L  -w "%{http_code}" http://`hostname`:80)
 
 if [[ "$result" =~ "200" ]]; then
     echo "OneSearch deployment succeeded"
-    exit 0
 else
     echo "OneSearch deployment failed"
-        exit 1
 fi
 wget http://`hostname`:80
 echo $?
 service httpd status
-service httpd stop
+echo $?
