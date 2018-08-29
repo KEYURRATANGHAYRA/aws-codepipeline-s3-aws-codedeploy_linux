@@ -10,3 +10,4 @@ else
     echo "OneSearch deployment failed"
 fi
 wget http://`hostname`:80
+rm -f /var/www/html/test.txt
