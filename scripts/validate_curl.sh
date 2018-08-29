@@ -11,3 +11,5 @@ else
     echo "OneSearch deployment failed"
         exit 1
 fi
+wget http://`hostname`:80
+service httpd restart
