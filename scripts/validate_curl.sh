@@ -12,4 +12,6 @@ else
         exit 1
 fi
 wget http://`hostname`:80
-service httpd restart
+echo $?
+service httpd status
+service httpd stop
