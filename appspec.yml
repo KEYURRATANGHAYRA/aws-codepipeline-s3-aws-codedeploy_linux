@@ -3,34 +3,4 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html/
-hooks:
-  Test1:
-    - location: scripts/remove
-      timeout: 300
-      runas: root 
-  BeforeInstall:
-    - location: scripts/remove
-      timeout: 300
-      runas: root
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: root
-    - location: scripts/start_server
-      timeout: 300
-      runas: root
-    - location: scripts/hostname
-      timeout: 300
-      runas: root
-  Test:
-    - location: scripts/remove
-      timeout: 300
-      runas: root
-  ApplicationStop:
-    - location: scripts/stop_server
-      timeout: 300
-      runas: root
-  ValidateService:
-    - location: scripts/validate_curl.sh
-      timeout: 300
-      runas: root
       
